@@ -38,11 +38,8 @@ AMQ_UTILS.onGameLoad(() => {
 });
 
 const gameLoadChecker = setInterval(() => {
-	if (window.viewChanger) {
-		console.log(viewChanger?.currentView);
-		if (viewChanger?.currentView !== undefined) {
-			clearInterval(gameLoadChecker);
-			AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
-		}
+	if (window.viewChanger && viewChanger?.currentView !== undefined) {
+		clearInterval(gameLoadChecker);
+		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 	}
 }, 100);
