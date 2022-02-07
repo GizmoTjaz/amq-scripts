@@ -1,10 +1,12 @@
 // ==UserScript==
-// @name        AMQ Auto-ready
+// @name        Auto-ready
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
 // @version     1.0
 // @author      GizmoTjaz
+// @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
+// @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
