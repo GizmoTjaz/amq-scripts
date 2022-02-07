@@ -17,7 +17,7 @@ window.AMQ_UTILS = {
 
 };
 
-ViewChanger.prototype.changeView = (() => {
+ViewChanger.prototype.changeView = (function () {
 
 	const old = ViewChanger.prototype.changeView;
 
