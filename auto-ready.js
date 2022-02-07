@@ -6,6 +6,7 @@
 // @version     1.0
 // @author      GizmoTjaz
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
+// @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
 
 if (document.getElementById("startPage"))
