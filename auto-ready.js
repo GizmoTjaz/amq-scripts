@@ -14,7 +14,7 @@ if (document.getElementById("startPage"))
 
 function setReady () {
 
-	if (quiz.gameMode === "Ranked" || quiz.isHost || !lobby.inLobby || lobby.isSpectator)
+	if (quiz.gameMode === "Ranked" || lobby.hostName === selfName || !lobby.inLobby || lobby.isSpectator)
 		return;
 
 	if (!lobby.isReady) {
@@ -22,12 +22,11 @@ function setReady () {
 	}
 }
 
-AMQ_UTILS.onViewChange = () => {
-	console.log("view change");
+AMQ_UTILS.onViewChange(() => {
 	if (viewChanger.currentView === "lobby") {
 		AMQ_UTILS.randomDelay(setReady);
 	}
-}
+});
 
 new Listener("Room Settings Changed", () => {
 	AMQ_UTILS.randomDelay(setReady);
