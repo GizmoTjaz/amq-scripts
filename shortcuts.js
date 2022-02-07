@@ -3,11 +3,12 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.1
+// @version     1.0
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
+// @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
 
 if (document.getElementById("startPage"))
