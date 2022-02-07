@@ -91,32 +91,35 @@ const shortcuts = {
 };
 
 AMQ_UTILS.onGameLoad(() => {
-	quiz.answerInput.$input.on("input", e => {
+	// Fuck AMQ for taking extra time to load the damn answer input
+	setTimeout(() => {
+		quiz.answerInput.$input.on("input", e => {
 
-		const inputValue = e.target.value.trim();
-	
-		console.log(inputValue);
-	
-		if (inputValue.length > 0) {
-	
-			const shortcutSolution = shortcuts[inputValue.toLowerCase()];
-	
-			console.log(shortcutSolution);
-	
-			if (shortcutSolution) {
-	
-				const inputElement = quiz.answerInput.$input[0];
-	
-				inputElement.value = shortcutSolution;
-				
-				inputElement.dispatchEvent(new KeyboardEvent("keypress", {
-					key: "Enter",
-					code: "Enter",
-					which: 13
-				}));
+			const inputValue = e.target.value.trim();
+		
+			console.log(inputValue);
+		
+			if (inputValue.length > 0) {
+		
+				const shortcutSolution = shortcuts[inputValue.toLowerCase()];
+		
+				console.log(shortcutSolution);
+		
+				if (shortcutSolution) {
+		
+					const inputElement = quiz.answerInput.$input[0];
+		
+					inputElement.value = shortcutSolution;
+					
+					inputElement.dispatchEvent(new KeyboardEvent("keypress", {
+						key: "Enter",
+						code: "Enter",
+						which: 13
+					}));
+				}
 			}
-		}
-	});
+		});
+	}, 1000);
 });
 
 AMQ_addScriptData({
