@@ -22,7 +22,7 @@ window.AMQ_UTILS = {
 };
 
 const gameLoadChecker = setInterval(() => {
-	if (viewChanger?.currentView !== undefined) {
+	if (viewChanger && viewChanger?.currentView !== undefined) {
 		clearInterval(gameLoadChecker);
 		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 	}
