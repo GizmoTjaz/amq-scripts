@@ -97,13 +97,9 @@ AMQ_UTILS.onGameLoad(() => {
 
 			const inputValue = e.target.value.trim();
 		
-			console.log(inputValue);
-		
 			if (inputValue.length > 0) {
 		
 				const shortcutSolution = shortcuts[inputValue.toLowerCase()];
-		
-				console.log(shortcutSolution);
 		
 				if (shortcutSolution) {
 		
