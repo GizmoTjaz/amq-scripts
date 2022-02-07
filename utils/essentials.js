@@ -17,7 +17,7 @@ window.AMQ_UTILS = {
 
 };
 
-ViewChanger.prototype.changeView = () => {
+ViewChanger.prototype.changeView = (() => {
 
 	const old = ViewChanger.prototype.changeView;
 
@@ -29,4 +29,4 @@ ViewChanger.prototype.changeView = () => {
 			callback.apply();
 		});
 	};
-};
+})();
