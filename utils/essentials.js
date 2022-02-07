@@ -21,21 +21,25 @@ window.AMQ_UTILS = {
 
 };
 
+AMQ_UTILS.onGameLoad(() => {
+
+	ViewChanger.prototype.changeView = (function () {
+
+		const old = ViewChanger.prototype.changeView;
+	
+		return function () {
+			
+			old.apply(this, arguments);
+	
+			AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
+		};
+	})();
+
+});
+
 const gameLoadChecker = setInterval(() => {
 	if (viewChanger && viewChanger?.currentView !== undefined) {
 		clearInterval(gameLoadChecker);
 		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 	}
 }, 100);
-
-ViewChanger.prototype.changeView = (function () {
-
-	const old = ViewChanger.prototype.changeView;
-
-	return function () {
-		
-		old.apply(this, arguments);
-
-		AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
-	};
-})();
