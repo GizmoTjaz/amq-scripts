@@ -1,6 +1,7 @@
 window.AMQ_UTILS = {
 
 	__viewChangeListeners: [],
+	__gameLoadListeners: [],
 
 	// Functions
 	getRandomNumber: function (max) {
@@ -13,9 +14,19 @@ window.AMQ_UTILS = {
 	// Listeners
 	onViewChange: function (callback) {
 		this.__viewChangeListeners.push(callback);
+	},
+	onGameLoad: function (callback) {
+		this.__gameLoadListeners.push(callback);
 	}
 
 };
+
+const gameLoadChecker = setInterval(() => {
+	if (viewChanger?.currentView !== undefined) {
+		clearInterval(gameLoadChecker);
+		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
+	}
+}, 100);
 
 ViewChanger.prototype.changeView = (function () {
 
@@ -25,8 +36,6 @@ ViewChanger.prototype.changeView = (function () {
 		
 		old.apply(this, arguments);
 
-		AMQ_UTILS.__viewChangeListeners.forEach(callback => {
-			callback.apply();
-		});
+		AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
 	};
 })();
