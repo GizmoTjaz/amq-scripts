@@ -3,15 +3,15 @@ window.AMQ_UTILS = {
 	__viewChangeListeners: [],
 
 	// Functions
-	getRandomNumber: (max) => {
+	getRandomNumber: function (max) {
 		return Math.floor(Math.random() * max);
 	},
-	randomDelay: (callback) => {
+	randomDelay: function (callback) {
 		setTimeout(callback, this.getRandomNumber(300));
 	},
 
 	// Listeners
-	onViewChange: (callback) => {
+	onViewChange: function (callback) {
 		this.__viewChangeListeners.push(callback);
 	}
 
