@@ -14,7 +14,7 @@
 let submitInterval = null;
 
 AMQ_UTILS.onViewChange(() => {
-	if (viewChanger.currentView === "game") {
+	if (viewChanger.currentView === "quiz") {
 		submitInterval = setInterval(() => {
 			if (
 				quiz.gameMode !== "Ranked"
