@@ -86,7 +86,9 @@ const shortcuts = {
 	"$$$": "Fugou Keiji Balance: Unlimited",
 	"dragon 1": "Kobayashi-san Chi no Maid Dragon",
 	"dragon 2": "Miss Kobayashi's Dragon Maid S",
-	"yagakimi": "Yagate Kimi ni Naru"
+	"yagakimi": "Yagate Kimi ni Naru",
+	"kake 1": "Kakegurui",
+  	"kake 2": "Kakegurui××"
   
 };
 
