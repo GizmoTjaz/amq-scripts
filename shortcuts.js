@@ -107,16 +107,8 @@ AMQ_UTILS.onGameLoad(() => {
 				const shortcutSolution = shortcuts[inputValue.toLowerCase()];
 		
 				if (shortcutSolution) {
-		
-					const inputElement = quiz.answerInput.$input[0];
-		
-					inputElement.value = shortcutSolution;
-					
-					inputElement.dispatchEvent(new KeyboardEvent("keypress", {
-						key: "Enter",
-						code: "Enter",
-						which: 13
-					}));
+					e.target.value = shortcutSolution;
+					AMQ_UTILS.submitAnswer();
 				}
 			}
 		});
