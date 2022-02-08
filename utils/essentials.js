@@ -28,21 +28,17 @@ window.AMQ_UTILS = {
 
 };
 
-AMQ_UTILS.onGameLoad(() => {
+ViewChanger.prototype.changeView = (function () {
 
-	ViewChanger.prototype.changeView = (function () {
+	const old = ViewChanger.prototype.changeView;
 
-		const old = ViewChanger.prototype.changeView;
-	
-		return function () {
-			
-			old.apply(this, arguments);
-	
-			AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
-		};
-	})();
+	return function () {
+		
+		old.apply(this, arguments);
 
-});
+		AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
+	};
+})();
 
 const gameLoadChecker = setInterval(() => {
 	if (window.quiz && window.lobby && window.viewChanger?.currentView !== undefined) {
