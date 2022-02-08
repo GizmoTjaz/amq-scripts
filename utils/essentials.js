@@ -8,7 +8,7 @@ window.AMQ_UTILS = {
 		return Math.floor(Math.random() * max);
 	},
 	randomDelay: function (callback) {
-		setTimeout(callback, this.getRandomNumber(300));
+		setTimeout(callback, this.getRandomNumber(400));
 	},
 
 	// Listeners
