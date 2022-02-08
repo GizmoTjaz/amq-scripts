@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -94,6 +94,9 @@ AMQ_UTILS.onGameLoad(() => {
 	// Fuck AMQ for taking extra time to load the damn answer input
 	setTimeout(() => {
 		quiz.answerInput.$input.on("input", e => {
+
+			if (quiz.gameMode === "Ranked")
+				return;
 
 			const inputValue = e.target.value.trim();
 		
