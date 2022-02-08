@@ -10,6 +10,13 @@ window.AMQ_UTILS = {
 	randomDelay: function (callback) {
 		setTimeout(callback, this.getRandomNumber(400));
 	},
+	submitAnswer: function () {
+		quiz.answerInput.$input[0].dispatchEvent(new KeyboardEvent("keypress", {
+			key: "Enter",
+			code: "Enter",
+			which: 13
+		}));
+	},
 
 	// Listeners
 	onViewChange: function (callback) {
