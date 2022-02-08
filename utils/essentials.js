@@ -28,6 +28,9 @@ window.AMQ_UTILS = {
 
 };
 
+if (document.getElementById("startPage"))
+	return;
+
 ViewChanger.prototype.changeView = (function () {
 
 	const old = ViewChanger.prototype.changeView;
