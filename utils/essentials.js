@@ -42,4 +42,4 @@ const gameLoadChecker = setInterval(() => {
 		clearInterval(gameLoadChecker);
 		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 	}
-}, 100);
+}, 300);
