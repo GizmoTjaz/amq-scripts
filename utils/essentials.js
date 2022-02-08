@@ -38,7 +38,7 @@ AMQ_UTILS.onGameLoad(() => {
 });
 
 const gameLoadChecker = setInterval(() => {
-	if (window.viewChanger && viewChanger?.currentView !== undefined) {
+	if (window.quiz && window.lobby && window.viewChanger?.currentView !== undefined) {
 		clearInterval(gameLoadChecker);
 		AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 	}
