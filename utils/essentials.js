@@ -1,6 +1,3 @@
-if (document.getElementById("startPage"))
-	return;
-
 // Don't overwrite existing essentials
 if (window.AMQ_UTILS)
 	return;
