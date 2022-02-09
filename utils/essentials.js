@@ -1,3 +1,10 @@
+if (document.getElementById("startPage"))
+	return;
+
+// Don't overwrite existing essentials
+if (window.AMQ_UTILS)
+	return;
+
 window.AMQ_UTILS = {
 
 	__viewChangeListeners: [],
@@ -27,9 +34,6 @@ window.AMQ_UTILS = {
 	}
 
 };
-
-if (document.getElementById("startPage"))
-	return;
 
 ViewChanger.prototype.changeView = (function () {
 
