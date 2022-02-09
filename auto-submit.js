@@ -12,16 +12,19 @@
 // ==/UserScript==
 
 let submitInterval = null;
+let previousAnswer = "";
 
 AMQ_UTILS.onViewChange(() => {
 	if (viewChanger.currentView === "quiz" && !submitInterval) {
 		submitInterval = setInterval(() => {
+
+			const currentAnswer = quiz.answerInput.$input[0].value;
+
 			if (
-				quiz.gameMode !== "Ranked"
-				&& quiz.inQuiz
-				&& !lobby.isSpectator
-				&& quiz.answerInput.$input[0].value.trim().length > 0
+				quiz.gameMode !== "Ranked" && quiz.inQuiz && !lobby.isSpectator
+				&& previousAnswer !== currentAnswer && currentAnswer.trim().length > 0
 			) {
+				previousAnswer = currentAnswer
 				AMQ_UTILS.submitAnswer();
 			}
 		}, 300);
