@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -88,7 +88,7 @@ const shortcuts = {
 	"dragon 2": "Miss Kobayashi's Dragon Maid S",
 	"yagakimi": "Yagate Kimi ni Naru",
 	"kake 1": "Kakegurui",
-  	"kake 2": "Kakegurui××"
+	"kake 2": "Kakegurui××"
   
 };
 
