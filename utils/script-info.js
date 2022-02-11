@@ -1,10 +1,12 @@
 // Source: https://github.com/TheJoseph98/AMQ-Scripts/blob/master/common/amqScriptInfo.js
 
+if (document.getElementById("startPage"))
+	return;
+
 /*
 Creates the installed scripts window if it doesn't exist and adds "Installed Userscripts" button to the main page and settings
 */
 function AMQ_createInstalledWindow() {
-    if (!window.setupDocumentDone) return;
     if ($("#installedModal").length === 0) {
         $("#gameContainer").append($(`
             <div class="modal fade" id="installedModal" tabindex="-1" role="dialog">
