@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.4
+// @version     1.41
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -99,10 +99,14 @@ AMQ_UTILS.onGameLoad(() => {
 			return;
 
 		const inputValue = e.target.value.trim();
+
+		console.log(inputValue);
 	
 		if (inputValue.length > 0) {
 	
 			const shortcutSolution = shortcuts[inputValue.toLowerCase()];
+
+			console.log(shortcutSolution);
 	
 			if (shortcutSolution) {
 				e.target.value = shortcutSolution;
