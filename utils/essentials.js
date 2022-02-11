@@ -1,6 +1,6 @@
 // Don't overwrite existing essentials
-if (window.AMQ_UTILS)
-	return;
+//if (window.AMQ_UTILS)
+//	return;
 
 window.AMQ_UTILS = {
 
