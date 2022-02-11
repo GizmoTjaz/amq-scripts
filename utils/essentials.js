@@ -1,3 +1,6 @@
+if (document.getElementById("startPage"))
+	return;
+
 // Only set up once
 if (!window.AMQ_UTILS) {
 	
