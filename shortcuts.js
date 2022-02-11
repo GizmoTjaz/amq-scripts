@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -93,26 +93,23 @@ const shortcuts = {
 };
 
 AMQ_UTILS.onGameLoad(() => {
-	// Fuck AMQ for taking extra time to load the damn answer input
-	setTimeout(() => {
-		quiz.answerInput.$input.on("input", e => {
+	quiz.answerInput.$input.on("input", e => {
 
-			if (quiz.gameMode === "Ranked")
-				return;
+		if (quiz.gameMode === "Ranked")
+			return;
 
-			const inputValue = e.target.value.trim();
-		
-			if (inputValue.length > 0) {
-		
-				const shortcutSolution = shortcuts[inputValue.toLowerCase()];
-		
-				if (shortcutSolution) {
-					e.target.value = shortcutSolution;
-					AMQ_UTILS.submitAnswer();
-				}
+		const inputValue = e.target.value.trim();
+	
+		if (inputValue.length > 0) {
+	
+			const shortcutSolution = shortcuts[inputValue.toLowerCase()];
+	
+			if (shortcutSolution) {
+				e.target.value = shortcutSolution;
+				AMQ_UTILS.submitAnswer();
 			}
-		});
-	}, 1000);
+		}
+	});
 });
 
 AMQ_addScriptData({
