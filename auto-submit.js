@@ -3,13 +3,16 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      GizmoTjaz
 // @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
 // @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
+
+if (document.getElementById("startPage"))
+	return;
 
 let submitInterval = null;
 let previousAnswer = "";
