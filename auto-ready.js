@@ -5,8 +5,8 @@
 // @grant       none
 // @version     1.3
 // @author      GizmoTjaz
-// @updateURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
-// @downloadURL	https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
+// @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
+// @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
