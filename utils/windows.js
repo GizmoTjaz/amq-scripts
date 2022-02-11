@@ -1,5 +1,8 @@
 // Source: https://github.com/TheJoseph98/AMQ-Scripts/blob/master/common/amqWindows.js
 
+if (document.getElementById("startPage"))
+	return;
+
 class AMQWindow {
     constructor(data) {
         this.id = data.id === undefined ? "" : data.id;
@@ -442,14 +445,8 @@ function windowSetup() {
 
 // Wait until the LOADING... screen is hidden and load script
 let windowLoadInterval = setInterval(() => {
-    // don't load on login page
-    if (document.getElementById("startPage")) {
-        clearInterval(windowLoadInterval);
-    }
-    else {
-        if (document.getElementById("loadingScreen").classList.contains("hidden")) {
-            windowSetup();
-            clearInterval(windowLoadInterval);
-        }
-    }
+    if (document.getElementById("loadingScreen").classList.contains("hidden")) {
+		windowSetup();
+		clearInterval(windowLoadInterval);
+	}
 }, 500);
