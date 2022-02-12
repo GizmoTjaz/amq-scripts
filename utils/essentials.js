@@ -53,5 +53,5 @@ if (!window.AMQ_UTILS) {
 				window.AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 			}
 		}, 200);
-	}, 500);
+	}, 1000);
 }
