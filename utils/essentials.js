@@ -47,8 +47,13 @@ if (!window.AMQ_UTILS) {
 	})();
 
 	setTimeout(() => {
+
+		console.log("start check");
+
 		const gameLoadChecker = setInterval(() => {
+			console.log("NOT READY");
 			if (window.quiz && window.lobby && window.viewChanger?.currentView !== undefined) {
+				console.log("READY!");
 				clearInterval(gameLoadChecker);
 				window.AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 			}
