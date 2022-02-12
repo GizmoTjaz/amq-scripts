@@ -50,8 +50,8 @@ if (!window.AMQ_UTILS) {
 		const gameLoadChecker = setInterval(() => {
 			if (window.quiz && window.lobby && window.viewChanger?.currentView !== undefined) {
 				clearInterval(gameLoadChecker);
-				AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
+				window.AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 			}
 		}, 200);
-	}, 500);
+	}, 1000);
 }
