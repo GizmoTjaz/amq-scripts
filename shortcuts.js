@@ -78,6 +78,13 @@ const shortcuts = {
 	"kaiji 1": "Gyakkyou Burai Kaiji",
 	"kaiji 2": "Gyakkyou Burai Kaiji: Hakairoku-hen",
 
+	// Evangelion
+	"eva 1.0": "Evangelion: 1.11 You Are (Not) Alone",
+	"eva 2.0": "Evangelion: 2.22 You Can (Not) Advance",
+	"eva 3.0": "Evangelion: 3.33 You Can (Not) Redo",
+	"eva 4.0": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+	"end of eva": "Neon Genesis Evangelion: The End of Evangelion",
+
 	// Misc
 	"ngnl": "No Game No Life",
 	"opm": "One Punch Man",
