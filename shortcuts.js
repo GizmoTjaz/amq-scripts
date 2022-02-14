@@ -96,7 +96,8 @@ const shortcuts = {
 	"yagakimi": "Yagate Kimi ni Naru",
 	"kake 1": "Kakegurui",
 	"kake 2": "Kakegurui××",
-	"wep": "Wonder Egg Priority"
+	"wep": "Wonder Egg Priority",
+	"aod": "Satsuriku no Tenshi"
   
 };
 
