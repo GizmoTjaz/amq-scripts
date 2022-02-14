@@ -97,7 +97,9 @@ const shortcuts = {
 	"kake 1": "Kakegurui",
 	"kake 2": "Kakegurui××",
 	"wep": "Wonder Egg Priority",
-	"aod": "Satsuriku no Tenshi"
+	"aod": "Satsuriku no Tenshi",
+	"gridman": "SSSS.GRIDMAN",
+	"dynazenon": "SSSS.DYNAZENON"
   
 };
 
