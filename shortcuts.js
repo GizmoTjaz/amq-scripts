@@ -109,6 +109,9 @@ AMQ_UTILS.onGameLoad(() => {
 		if (quiz.gameMode === "Ranked")
 			return;
 
+		if (window.AMQ_SA_MODE)
+			return;
+
 		const inputValue = e.target.value.trim();
 	
 		if (inputValue.length > 0) {

@@ -25,6 +25,7 @@ AMQ_UTILS.onViewChange(() => {
 
 			if (
 				quiz.gameMode !== "Ranked" && quiz.inQuiz && !lobby.isSpectator
+				&& !window.AMQ_SA_MODE
 				&& previousAnswer !== currentAnswer && currentAnswer.trim().length > 0
 			) {
 				previousAnswer = currentAnswer
