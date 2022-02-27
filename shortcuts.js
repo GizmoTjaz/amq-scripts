@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.6
+// @version     1.7
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -84,6 +84,10 @@ const shortcuts = {
 	"eva 3.0": "Evangelion: 3.33 You Can (Not) Redo",
 	"eva 4.0": "Evangelion: 3.0+1.0 Thrice Upon a Time",
 	"end of eva": "Neon Genesis Evangelion: The End of Evangelion",
+	
+	// Fire Force
+	"fire 1": "Enen no Shouboutai",
+	"fire 2": "Enen no Shouboutai: Ni no Shou",
 
 	// Misc
 	"ngnl": "No Game No Life",
