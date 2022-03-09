@@ -103,7 +103,8 @@ const shortcuts = {
 	"wep": "Wonder Egg Priority",
 	"aod": "Satsuriku no Tenshi",
 	"gridman": "SSSS.GRIDMAN",
-	"dynazenon": "SSSS.DYNAZENON"
+	"dynazenon": "SSSS.DYNAZENON",
+	"ditf": "DARLING in the FRANXX"
   
 };
 
