@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.3
+// @version     1.3.1
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
@@ -30,17 +30,21 @@ AMQ_UTILS.onViewChange(() => {
 	}
 });
 
-new Listener("Room Settings Changed", () => {
-	AMQ_UTILS.randomDelay(setReady);
-}).bindListener();
+AMQ_UTILS.onGameLoad(() => {
 
-new Listener("Spectator Change To Player", () => {
-	AMQ_UTILS.randomDelay(setReady);
-}).bindListener();
+	new Listener("Room Settings Changed", () => {
+		AMQ_UTILS.randomDelay(setReady);
+	}).bindListener();
+	
+	new Listener("Spectator Change To Player", () => {
+		AMQ_UTILS.randomDelay(setReady);
+	}).bindListener();
+	
+	new Listener("Host Promotion", () => {
+		AMQ_UTILS.randomDelay(setReady);
+	}).bindListener();
 
-new Listener("Host Promotion", () => {
-	AMQ_UTILS.randomDelay(setReady);
-}).bindListener();
+});
 
 AMQ_addScriptData({
 	name: "Auto Ready",
