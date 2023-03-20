@@ -7,7 +7,6 @@
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
-// @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
 
@@ -36,12 +35,4 @@ AMQ_UTILS.onViewChange(() => {
 		clearInterval(submitInterval);
 		submitInterval = null;
 	}
-});
-
-AMQ_addScriptData({
-	name: "Auto-submit answers",
-	author: "Tjizz",
-	description: `
-		<p>Automatically submits your answer as you type.</p>
-	`
 });

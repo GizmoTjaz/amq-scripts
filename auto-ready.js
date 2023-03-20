@@ -7,7 +7,6 @@
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
-// @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
 
@@ -44,12 +43,4 @@ AMQ_UTILS.onGameLoad(() => {
 		AMQ_UTILS.randomDelay(setReady);
 	}).bindListener();
 
-});
-
-AMQ_addScriptData({
-	name: "Auto Ready",
-	author: "Tjizz",
-	description: `
-		<p>Automatically sets your state to ready in non-ranked games.</p>
-	`
 });

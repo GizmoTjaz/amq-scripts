@@ -7,7 +7,6 @@
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
-// @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/script-info.js
 // @require     https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/utils/essentials.js
 // ==/UserScript==
 
@@ -129,12 +128,4 @@ AMQ_UTILS.onGameLoad(() => {
 			}
 		}
 	});
-});
-
-AMQ_addScriptData({
-	name: "Show Name Shortcuts",
-	author: "Tjizz",
-	description: `
-		<p>Lets you guess show names more easier with shortcuts.</p>
-	`
 });
