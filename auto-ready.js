@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.3.1
+// @version     1.3.2
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-ready.js

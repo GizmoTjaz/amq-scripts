@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.7.0
+// @version     1.7.1
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
