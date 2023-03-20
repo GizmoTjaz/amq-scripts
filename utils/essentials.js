@@ -34,18 +34,6 @@ if (!window.AMQ_UTILS) {
 	
 	};
 
-	ViewChanger.prototype.changeView = (function () {
-
-		const old = ViewChanger.prototype.changeView;
-	
-		return function () {
-			
-			old.apply(this, arguments);
-	
-			AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
-		};
-	})();
-
 	setTimeout(() => {
 		const gameLoadChecker = setInterval(() => {
 			if (
@@ -54,7 +42,21 @@ if (!window.AMQ_UTILS) {
 				&& Listener
 				&& ViewChanger && viewChanger.currentView !== undefined
 			) {
+				
 				clearInterval(gameLoadChecker);
+
+				ViewChanger.prototype.changeView = (function () {
+
+					const old = ViewChanger.prototype.changeView;
+				
+					return function () {
+						
+						old.apply(this, arguments);
+				
+						AMQ_UTILS.__viewChangeListeners.forEach(callback => callback.apply());
+					};
+				})();
+
 				window.AMQ_UTILS.__gameLoadListeners.forEach(callback => callback.apply());
 			}
 		}, 200);
