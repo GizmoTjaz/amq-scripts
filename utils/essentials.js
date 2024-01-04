@@ -17,7 +17,7 @@ if (!window.AMQ_UTILS) {
 			setTimeout(callback, this.getRandomNumber(400));
 		},
 		submitAnswer: function () {
-			quiz.answerInput.$input[0].dispatchEvent(new KeyboardEvent("keypress", {
+			quiz.answerInput.typingInput.$input[0].dispatchEvent(new KeyboardEvent("keypress", {
 				key: "Enter",
 				code: "Enter",
 				which: 13
