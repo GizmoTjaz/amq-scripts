@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.5.1
+// @version     1.5.2
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/auto-submit.js
@@ -20,7 +20,7 @@ AMQ_UTILS.onViewChange(() => {
 	if (viewChanger.currentView === "quiz" && !submitInterval) {
 		submitInterval = setInterval(() => {
 
-			const currentAnswer = quiz.answerInput.$input[0].value;
+			const currentAnswer = quiz.answerInput.typingInput.$input[0].value;
 
 			if (
 				quiz.gameMode !== "Ranked" && quiz.inQuiz && !lobby.isSpectator

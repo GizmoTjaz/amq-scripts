@@ -3,7 +3,7 @@
 // @namespace   AMQ Scripts
 // @match       https://animemusicquiz.com/*
 // @grant       none
-// @version     1.7.1
+// @version     1.7.2
 // @author      GizmoTjaz
 // @updateURL   https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
 // @downloadURL https://raw.githubusercontent.com/GizmoTjaz/amq-scripts/master/shortcuts.js
@@ -108,7 +108,7 @@ const shortcuts = {
 };
 
 AMQ_UTILS.onGameLoad(() => {
-	quiz.answerInput.$input.on("input", e => {
+	quiz.answerInput.typingInput.$input.on("input", e => {
 
 		if (quiz.gameMode === "Ranked")
 			return;
